@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Public Repo Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App queries public user data from GitHub and shows an overview of your public directories and their commits.
 
-## Available Scripts
+# Step-By-Step
 
-In the project directory, you can run:
+## 1. Open the App in your browser and enter the username of the GitHub user you'd like to look up.
 
-### `npm start`
+ Note: you can press enter or click the search button to proceed. When a User is found a card is show with their avatar, name and number of public repositories they have.
+ Click the arrow button to continue.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. The Repository interface
+ You can click the star on the repository cards to favourite them and move them up in the list. The GitHub icon will link you to the actual repository on GitHub and clicking on one will open up the Commits interface.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 3. The Commits interface
+ This page fetches the last 20 commits made to the chosen repository and lists them up from newest one to oldest one. You can enter a search query in the textfield to the left of the commits to filter based on their commit messages.
 
-### `npm test`
+## 4. This app makes use off:
+    - Axios for the api requests
+    - Arrow functions for shorter writing of anonymous functions
+    - Spread operator to merge two arrays into a new one
+    - UseEffect, UseNavigate, UseContext, ... React webhooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
