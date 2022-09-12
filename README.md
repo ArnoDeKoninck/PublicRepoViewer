@@ -6,6 +6,9 @@ This App queries public user data from GitHub and shows an overview of your publ
 
 ## 1. Open the App in your browser and enter the username of the GitHub user you'd like to look up.
 
+https://public-repo-viewer.netlify.app (This linked worked for me in incognito)
+https://631ee221056feb0008ab6047--public-repo-viewer.netlify.app/ (permalink as fallback)
+
  Note: you can press enter or click the search button to proceed. When a User is found a card is show with their avatar, name and number of public repositories they have.
  Click the arrow button to continue.
 
