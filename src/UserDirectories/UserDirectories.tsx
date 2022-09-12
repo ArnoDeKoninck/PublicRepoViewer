@@ -44,6 +44,10 @@ function UserDirectories() {
 		}
 	}
 
+	if (error) {
+		return <div>An error occured: {error.message} Please try again.</div>;
+	}
+
 	if (!directories) {
 		return (
 			<div className="App">
