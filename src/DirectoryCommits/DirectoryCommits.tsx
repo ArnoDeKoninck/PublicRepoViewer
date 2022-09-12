@@ -31,6 +31,7 @@ function DirectoryCommits() {
 
 	useEffect(() => {
 		getMoreCommits();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	async function getMoreCommits() {
@@ -51,6 +52,10 @@ function DirectoryCommits() {
 			setError(e);
 			console.log(e);
 		}
+	}
+
+	if (error) {
+		return <div>An error occured: {error.message} Please try again</div>;
 	}
 
 	if (!commits) {
